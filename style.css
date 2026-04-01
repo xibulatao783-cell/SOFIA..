@@ -1,0 +1,45 @@
+@import url('https://googleapis.com');
+
+body {
+    background-color: #e0f2fe; /* Baby Blue */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container { text-align: center; width: 90%; max-width: 450px; }
+.hidden { display: none !important; }
+h1, h2 { color: #0369a1; margin-bottom: 20px; }
+.cute-gif { width: 140px; margin-bottom: 20px; border-radius: 15px; }
+
+/* BUTTONS */
+.btn-group { display: flex; justify-content: center; gap: 15px; }
+button { padding: 12px 30px; font-size: 16px; border-radius: 50px; border: none; cursor: pointer; transition: 0.3s; }
+#yesBtn { background-color: #0ea5e9; color: white; }
+#noBtn { background-color: white; color: #0369a1; border: 2px solid #0ea5e9; z-index: 1000; }
+
+/* GIFT GRID */
+.gift-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.gift-box { background: white; padding: 20px 10px; border-radius: 15px; cursor: pointer; border: 2px solid #bae6fd; }
+.gift-label { font-size: 10px; font-weight: bold; color: #0369a1; margin-top: 5px; }
+
+/* PHOTO GALLERY */
+.gallery-wrapper { display: flex; justify-content: center; gap: 10px; background: white; padding: 15px; border-radius: 15px; }
+.photo-frame { width: 100px; height: 100px; overflow: hidden; border: 3px solid white; }
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+
+/* MUSIC PLAYER */
+.player-card { background: #7dd3fc; padding: 20px; border-radius: 25px; display: flex; align-items: center; gap: 20px; text-align: left; }
+.vinyl-disk { width: 100px; height: 100px; background: #333; border-radius: 50%; border: 8px solid white; animation: spin 5s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* MESSAGE */
+.message-card { background: white; padding: 30px; border-radius: 30px; text-align: justify; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.message-text { font-size: 14px; color: #334155; line-height: 1.6; min-height: 200px; }
+.signature { font-family: 'Dancing Script'; text-align: right; color: #0ea5e9; font-size: 24px; margin-top: 15px; }
+
+.back-btn { margin-top: 20px; background: none; color: #0ea5e9; border: 1px solid #0ea5e9; font-size: 11px; padding: 8px 15px; }
